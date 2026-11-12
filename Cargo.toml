@@ -2,5 +2,7 @@
 name = "ves_vecs_rust"
 version = "0.1.0"
 edition = "2024"
+description = "This library contains a basic Vec2d struct with some methods and operations used for handling both coordinates and math"
+repository = "https://github.com/VES1963/ves_vecs_rust.git"
 
 [dependencies]

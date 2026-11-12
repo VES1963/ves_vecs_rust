@@ -1,11 +1,13 @@
 #[derive(Debug, Copy, Clone)]
 pub struct Vec2d {
+    /// The **x** component of the [Vec2d]
     pub x: f64,
+    /// The **y** component of the [Vec2d]
     pub y: f64,
 }
 
 impl Vec2d {
-    /// Creates a new [Vec2d] from an [x] and a [y] component
+    /// Creates a new [Vec2d] from an **x** and a **y** component
     pub fn new(x: f64, y: f64) -> Self {
         Self { x, y }
     }
