@@ -1,6 +1,6 @@
 [package]
 name = "ves_vecs_rust"
-version = "0.1.2"
+version = "0.1.3"
 edition = "2024"
 description = "This library contains a Vector struct and a Matrix struct with some methods and operations used for handling both coordinates and math"
 repository = "https://github.com/VES1963/ves_vecs_rust.git"
