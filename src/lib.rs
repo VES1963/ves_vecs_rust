@@ -1,4 +1,5 @@
-pub mod vec;
+mod vec;
+pub use vec::*;
 
 #[cfg(test)]
 mod tests {
