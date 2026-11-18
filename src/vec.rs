@@ -1,5 +1,6 @@
 mod matrix {
-
+    use super::vector::Vector;
+    
     /// This [Matrix] struct is used to represent a 2d matrix for math operations
     #[derive(Debug, Copy, Clone)]
     pub struct Matrix<const X: usize, const Y: usize> {
@@ -239,7 +240,7 @@ mod vector {
     }
 
     impl<const D: usize> Vector<D> {
-        /// Creates a new [Vector] struct from a 1d [Array] of [f64]s
+        /// Creates a new [Vector] struct from a 1d **Array** of [f64]s
         pub fn new(vec: [f64; D]) -> Self {
             Self { values: vec }
         }
