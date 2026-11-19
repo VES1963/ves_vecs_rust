@@ -377,6 +377,12 @@ mod vector {
         }
     }
 
+    impl<const D: usize> std::ops::MulAssign<Matrix<D, D>> for Vector<D> {
+        fn mul_assign(&mut self, rhs: Matrix<D, D>) {
+            *self = *self * rhs
+        }
+    }
+
     impl<const D: usize> std::ops::Mul<Vector<D>> for Matrix<D, D> {
         type Output = Vector<D>;
         fn mul(self, rhs: Vector<D>) -> Self::Output {
